@@ -1,0 +1,303 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\..\..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25C85601-351F-4FE2-A572-BBDC3CB735C2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wuhan.jiangxia.canglongdao.cpark.grievance._WEB_</RootNamespace>
+    <AssemblyName>wuhan.jiangxia.canglongdao.cpark.grievance._WEB_</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44376</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._integer_._LIB_, Version=1.0.7483.23523, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul.num._integer_._LIB_.1.0.7483.23523\lib\net472\nilnul.num._integer_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._quotient_._LIB_, Version=1.0.7485.3089, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul.num._quotient_._LIB_.1.0.7485.3089\lib\net472\nilnul.num._quotient_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._real_._LIB_, Version=2.0.7485.5170, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul.num._real_._LIB_.2.0.7485.5170\lib\net472\nilnul.num._real_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.set._discrete_._LIB_, Version=1.0.6873.37823, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul.set._discrete_._LIB_.1.0.6873.37823\lib\net46\nilnul.set._discrete_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.web._ascxRender_._LIB_, Version=1.0.7310.41436, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul.web._ascxRender_._LIB_.1.0.7310.41436\lib\net472\nilnul.web._ascxRender_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.web._css_.WEB._CTR_, Version=1.0.7422.42331, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul.web._css_.WEB._CTR_.1.0.7422.42331\lib\net472\nilnul.web._css_.WEB._CTR_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.web._ctr_.WEB._CTR_, Version=1.0.7457.32514, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul.web._ctr_.WEB._CTR_.1.0.7457.32514\lib\net472\nilnul.web._ctr_.WEB._CTR_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.web._js_.WEB._CTR_, Version=1.0.7388.29841, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul.web._js_.WEB._CTR_.1.0.7388.29841\lib\net472\nilnul.web._js_.WEB._CTR_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._bit_._LIB_, Version=1.0.7455.33559, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._bit_._LIB_.1.0.7455.33559\lib\net472\nilnul._bit_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._character_._LIB_, Version=2.0.7433.34403, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._character_._LIB_.2.0.7433.34403\lib\net472\nilnul._character_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._fs_._LIB_, Version=2.0.7478.26662, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._fs_._LIB_.2.0.7478.26662\lib\net472\nilnul._fs_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._lang_._LIB_, Version=1.0.6962.27014, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._lang_._LIB_.1.0.6962.27014\lib\net46\nilnul._lang_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._ling_._LIB_, Version=1.0.7079.29589, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._ling_._LIB_.1.0.7079.29589\lib\net46\nilnul._ling_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._linq_._LIB_, Version=1.0.6928.36726, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._linq_._LIB_.1.0.6928.36726\lib\net46\nilnul._linq_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._num_._LIB_, Version=1.0.7483.35230, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._num_._LIB_.1.0.7483.35230\lib\net472\nilnul._num_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._num_._LINQ_, Version=1.0.7483.21002, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._num_._LINQ_.1.0.7483.21002\lib\net472\nilnul._num_._LINQ_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._obj_._LIB_, Version=1.0.7484.53, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._obj_._LIB_.1.0.7484.53\lib\net472\nilnul._obj_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._rel_._LIB_, Version=1.0.7443.26595, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._rel_._LIB_.1.0.7443.26595\lib\net472\nilnul._rel_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._set_._LIB_, Version=1.0.7442.42317, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._set_._LIB_.1.0.7442.42317\lib\net472\nilnul._set_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._time_._LIB_, Version=1.0.7462.20798, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._time_._LIB_.1.0.7462.20798\lib\net472\nilnul._time_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._txt_._LIB_, Version=1.0.7478.24799, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._txt_._LIB_.1.0.7478.24799\lib\net472\nilnul._txt_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._web_._CTR_, Version=1.0.7425.31288, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._web_._CTR_.1.0.7425.31288\lib\net472\nilnul._web_._CTR_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._web_._LIB_, Version=1.0.7463.37831, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._web_._LIB_.1.0.7463.37831\lib\net472\nilnul._web_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._xml_._LIB_, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\nilnul._xml_._LIB_.1.0.1\lib\net46\nilnul._xml_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="_nilnul_._CFG_, Version=1.0.7455.19770, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\_nilnul_._CFG_.1.0.7455.19770\lib\net46\_nilnul_._CFG_.dll</HintPath>
+    </Reference>
+    <Reference Include="_nilnul_._LIB_, Version=1.0.7455.19774, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\_nilnul_._LIB_.1.0.7455.19774\lib\net472\_nilnul_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="_nilnul_._LINQ_, Version=1.0.7455.19770, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\(packages)\_nilnul_._LINQ_.1.0.7455.19770\lib\net46\_nilnul_._LINQ_.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Article.ascx" />
+    <Content Include="article_\Facts.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Loader.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="_article_\Footnote.ascx" />
+    <Content Include="_article_\Similar2Impersonator.ascx" />
+    <Content Include="_article_\Srcs.ascx" />
+    <Content Include="_article_\src_\Guangzhou.ascx" />
+    <Content Include="_article_\src_\ownership\Santized.ascx" />
+    <Content Include="_article_\src_\ownership\smeared.jpg" />
+    <Content Include="_article_\src_\pay\invoice_\_ctor_\smudged_\fig_\189333%28hardlinked%29.jpg" />
+    <Content Include="_article_\src_\pay\invoice_\_ctor_\smudged_\fig_\206086%28hardlinked%29.jpg" />
+    <Content Include="_article_\src_\pay\invoice_\_ctor_\smudged_\fig_\Myriad18.ascx" />
+    <Content Include="_article_\src_\pay\invoice_\_ctor_\smudged_\fig_\Myriad20.ascx" />
+    <Content Include="_article_\src_\pay\invoice_\_tax_\smudged_\local%28hardlinked%29.jpg" />
+    <Content Include="_article_\src_\pay\invoice_\_tax_\smudged_\Local.ascx" />
+    <Content Include="_article_\src_\pay\invoice_\_tax_\smudged_\tax%28hardlinked%29.jpg" />
+    <Content Include="_article_\src_\pay\invoice_\_tax_\smudged_\Tax.ascx" />
+    <Content Include="_article_\src_\_decree_\BldSeven.ascx" />
+    <Content Include="_article_\src_\_decree_\ByCanglongdao.ascx" />
+    <Content Include="_article_\src_\_decree_\ByDistrict.ascx" />
+    <Content Include="_article_\src_\_decree_\byDistrict\Weibo.ascx" />
+    <Content Include="_article_\src_\_decree_\ByEstateBureau.ascx" />
+    <Content Include="_article_\src_\_decree_\_bldSeven_\ByDeveloper.ascx" />
+    <Content Include="_article_\src_\_decree_\_bldSeven_\byDeveloper.jpg" />
+    <Content Include="_article_\src_\_decree_\_bldSeven_\sciTechBureau.ascx" />
+    <Content Include="_article_\src_\_decree_\_bldSeven_\sciTechBureau.jpg" />
+    <Content Include="_article_\src_\_decree_\_byCanglongdao_\1.jpg" />
+    <Content Include="_article_\src_\_decree_\_byCanglongdao_\2.jpg" />
+    <Content Include="_article_\src_\_decree_\_byCanglongdao_\_1.ascx" />
+    <Content Include="_article_\src_\_decree_\_byCanglongdao_\_2.ascx" />
+    <Content Include="_article_\src_\_decree_\_byDistrict_\1.jpg" />
+    <Content Include="_article_\src_\_decree_\_byDistrict_\2.jpg" />
+    <Content Include="_article_\src_\_decree_\_byDistrict_\3.jpg" />
+    <Content Include="_article_\src_\_decree_\_byDistrict_\4.jpg" />
+    <Content Include="_article_\src_\_decree_\_byDistrict_\_1.ascx" />
+    <Content Include="_article_\src_\_decree_\_byDistrict_\_2.ascx" />
+    <Content Include="_article_\src_\_decree_\_byDistrict_\_3.ascx" />
+    <Content Include="_article_\src_\_decree_\_byDistrict_\_4.ascx" />
+    <Content Include="_article_\src_\_decree_\_byEstateGov_\1.jpg" />
+    <Content Include="_article_\src_\_decree_\_byEstateGov_\2.jpg" />
+    <Content Include="_article_\src_\_decree_\_byEstateGov_\_1.ascx" />
+    <Content Include="_article_\src_\_decree_\_byEstateGov_\_2.ascx" />
+    <Content Include="_article_\src_\_guangzhou_\Weibo.ascx" />
+    <Content Include="_Default.ascx" />
+    <Content Include="_this_\alipay.png" />
+    <Content Include="_this_\Title.ascx" />
+    <Content Include="_this_\title_\Impersonated.ascx" />
+    <Content Include="_this_\weixin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="_article_\src_\_guangzhou_\Guangzhou.docx" />
+    <Content Include="_this\master_\Loader.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="article_\facts\" />
+    <Folder Include="Models\" />
+    <Folder Include="_article_\section_\_src_\" />
+    <Folder Include="_article_\src_\pay\invoice_\_loan_\" />
+    <Folder Include="_article_\_srcs_\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62883</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44376/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:44376/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\..\..\..\..\(packages)\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\..\..\..\..\(packages)\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\..\..\(packages)\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\(packages)\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\..\..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\..\..\..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\..\..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
